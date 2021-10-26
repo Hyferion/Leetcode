@@ -16,5 +16,10 @@ class Solution:
         num_set = {}
         for num_index, num in enumerate(nums):
             if (target - num) in num_set:
+                print(num_set)
                 return [num_set[target - num], num_index]
             num_set[num] = num_index
+
+
+solution = Solution()
+print(solution.twoSum([2, 7, 11, 15], 9))
